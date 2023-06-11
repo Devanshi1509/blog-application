@@ -134,5 +134,7 @@ app.get('/post/:id', async (req, res) => {
   res.json(postDoc);
 })
 
-app.listen(4000);
+app.listen(4000, () => {
+  console.log("Serving app on localhost: 4000");
+});
 //
